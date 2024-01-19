@@ -1,0 +1,17 @@
+.skills {
+  margin-bottom: 1rem;
+}
+
+.skills .skills__list {
+  list-style: none;
+}
+
+.skills .skills__list .skills__list__item{
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.barra_progreso {
+  border: solid 1px black;
+  height: 1rem;
+}

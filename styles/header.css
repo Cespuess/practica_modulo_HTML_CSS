@@ -1,3 +1,25 @@
+.header{
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.4rem;
+  border: 2px solid black;
+  box-shadow: 4px 18px 19px -13px rgba(0,0,0,0.75);
+}
+
+.header .header__image img {
+  width: 100px;
+}
+
+.header .header__nav ul {
+  list-style: none;
+}
+
 .header__nav__pc {
   display: none;
 }
