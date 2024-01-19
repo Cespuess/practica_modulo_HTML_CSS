@@ -5,10 +5,126 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="styles/normalize.css">
-		<title>Document</title>
+		<link rel="stylesheet" href="styles/header.css">
+		<link href="assets/img/Site-favicon.ico" rel="icon" type="image/x-icon">
+		<title>Son Goku</title>
 	</head>
 
-	<body>
+	<body class="main-bg">
+		
+		<header class="header">
+			<div class="header__image"></div>
+			<nav class="header__nav">
+				<ul class="header__nav__mobile">
+					<li class="header__nav__mobile__item">Menu</li>
+				</ul>
+				<ul class="header__nav__pc">
+					<li class="header__nav__pc__item">Proyectos</li>
+					<li class="header__nav__pc__item">Skills</li>
+					<li class="header__nav__pc__item">Contacto</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="contenedor">
+			
+			<section class="info">
+				<h3>Son Goku</h1>
+				<p>Buenas, me llamo Son Goku, llegué de chiquito al planeta tierra proveniente del planeta Vegeta con la misión de conquistarla. Al llegar me acogió un anciano llamado Son Gohan, y un día paseando con él me llevé un fuerte golpe en la cabeza, lo que hizo que me olvidara del plan inicial. Desde entonces he vivido muchas aventuras con mis amigos, ¿quieres unirte a mí?</p>
+			</section>
+	
+			<section class="skills">
+				<h3>Mis skills</h3>
+				<ul class="skills__list">
+					<li class="skills__list__item">
+						<p>Fuerza</p>
+						<div class="barra_progreso barra_progreso__fuerza"></div>
+					</li>
+					<li class="skills__list__item">
+						<p>Velocidad</p>
+						<div class="barra_progreso barra_progreso__velocidad"></div>
+					</li>
+					<li class="skills__list__item">
+						<p>Kamehameha</p>
+						<div class="barra_progreso barra_progreso_kamehameha"></div>
+					</li>
+					<li class="skills__list__item">
+						<p>Patadas</p>
+						<div class="barra_progreso barra_progreso__patadas"></div>
+					</li>
+					<li class="skills__list__item">
+						<p>Vuelo</p>
+						<div class="barra_progreso barra_progreso__vuelo"></div>
+					</li>
+					<li class="skills__list__item">
+						<p>Simpatía</p>
+						<div class="barra_progreso barra_progreso__simpatia"></div>
+					</li>	
+				</ul>
+			</section>
+
+			<section class="banner">
+				<div class="banner__image"></div>
+				<div class="banner__text"></div>
+			</section>
+
+			<form action="/form" method="post">
+
+				<div class="form__element">
+					<label for="nombre" class="form__label">Nombre</label>
+					<input type="text" class="form__input" id="nombre" required>
+				</div>
+				<div class="form__element">
+					<label for="Apellidos" class="form__label">Apellidos</label>
+					<input type="text" class="form__input" id="apellidos" required>
+				</div>
+				<div class="form__element">
+					<label for="telefono" class="form__label">Telefono</label>
+					<input type="tel" class="form__input" id="telefono" required>
+				</div>
+				<div class="form__element">
+					<label for="github" class="form__label">Usuario Github</label>
+					<input type="text" class="form__input" id="github" required>
+				</div>
+				<fieldset class="form__element">
+					<legend>¿Cómo me conociste?</legend>
+					<div class="form__element__radio__list">
+						<label for="torneo">Torneo de artes marciales</label>
+						<input type="radio" id="torneo" name="torneo" value="torneo">
+						<label for="escuela">Escuela de la tortuga</label>
+						<input type="radio" id="escuela" name="escuela" value="escuela">
+						<label for="torre">Torre de Karin</label>
+						<input type="radio" id="torre" name="torre" value="torre">
+						<label for="capsule">Capsule Corp.</label>
+						<input type="radio" id="capsule" name="capsule" value="capsule">
+					</div>
+				</fieldset>
+				<div class="form__element">
+					<label for="info" class="form__label">Más información</label>
+					<textarea name="info" id="onfo" cols="30" rows="8" placeholder="Ej: Cuantas veces he resucitado a Krillin..."></textarea>
+				</div>
+				<div class="form__element form__element--checkbox">
+					<label for="newsletter" class="form__label">Quiero acceso a la newsletter</label>
+					<input type="checkbox" name="newsletter" id="newsletter" value="selected">
+				</div>
+				<div>
+					<input type="submit" class="btn" value="Enviar">
+					<input type="reset" class="btn btn__reset" value="Reset">
+				</div>
+			</form>
+
+			<footer>
+				<a href="https://www.linkedin.com/in/son-goku-7a90521b3/" class="footer__item" target="_blank">
+					<img src="assets/img/linkedin.png" alt="LinkedIn">
+				</a>
+				<a href="https://www.instagram.com/_boladedrac?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="footer__item" target="_blank">
+					<img src="assets/img/instagram.png" alt="Instagram">
+				</a>
+				<a href="https://youtu.be/WLOeKxyQ6Sg?si=3LS1YjNmak6qWXtZ" class="footer__item" target="_blank">
+					<img src="assets/img/youtube.png" alt="Youtube">
+				</a>
+			</footer>
+
+		</main>
 
 	</body>
 
