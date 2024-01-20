@@ -12,9 +12,14 @@
   box-shadow: 4px 18px 19px -13px rgba(0,0,0,0.75);
 }
 
-.header .header__image img {
-  width: 100px;
+.header .header__image {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: url(../assets/img/header_goku.jpeg) center center / cover;
+  border: solid 2px red;
 }
+
 
 .header .header__nav ul {
   list-style: none;

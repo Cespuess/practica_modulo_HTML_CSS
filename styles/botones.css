@@ -1,0 +1,18 @@
+.form__element.form__element__btn {
+  gap: 1rem;
+}
+
+.btn {
+  color:black;
+  background-color: rgb(211, 159, 17);
+  font-weight: bold;
+  font-size:x-large;
+  padding: 1rem;
+  border: solid 2px rgb(180, 136, 16);
+  border-radius: 20px;
+
+}
+
+.btn.btn__reset {
+  background-color: transparent;
+}

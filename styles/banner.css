@@ -1,0 +1,27 @@
+.banner {
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px black;
+  height:468px;
+  width: 100%;
+  border-radius: 15%;
+  margin-bottom: 3.5rem;
+}
+
+.banner .banner__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.5;
+  background: url(../assets/img/banner_goku.jpg) center / cover;
+}
+
+.banner .banner__text {
+  z-index: 1;
+  border-top:solid 2px aquamarine;
+  border-radius: 15%;
+}

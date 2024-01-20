@@ -1,0 +1,13 @@
+footer {
+  width: 100%;
+  border: solid 1px black;
+  margin-top: 2rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content:space-around
+}
+
+footer a img {
+  width: 25px;
+}

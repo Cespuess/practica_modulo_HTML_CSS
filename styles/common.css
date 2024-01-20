@@ -25,7 +25,14 @@ html {
 
 .contenedor {
   width: 90%;
+  padding:1rem 1rem;
   margin-top: 1rem;
   background-color: rgba(165, 119, 34, 0.418)
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  text-align:center;
+  border-bottom: solid 2px black;
 }
 

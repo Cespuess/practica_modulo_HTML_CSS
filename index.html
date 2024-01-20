@@ -9,6 +9,10 @@
 		<link rel="stylesheet" href="styles/header.css">
 		<link rel="stylesheet" href="styles/info.css">
 		<link rel="stylesheet" href="styles/skills.css">
+		<link rel="stylesheet" href="styles/banner.css">
+		<link rel="stylesheet" href="styles/form.css">
+		<link rel="stylesheet" href="styles/botones.css">
+		<link rel="stylesheet" href="styles/footer.css">
 		<link href="assets/img/Site-favicon.png" rel="icon" type="image/x-icon">
 		<title>Son Goku</title>
 	</head>
@@ -17,7 +21,6 @@
 		
 		<header class="header">
 			<div class="header__image">
-				<img src="assets/img/header_goku.jpg" alt="goku_nube">
 			</div>
 			<nav class="header__nav">
 				<ul class="header__nav__mobile">
@@ -58,7 +61,9 @@
 					</li>
 					<li class="skills__list__item">
 						<p>Vuelo</p>
-						<div class="barra_progreso barra_progreso__vuelo"></div>
+						<div class="barra_progreso barra_progreso__vue">
+							<div id="barra__progreso__vuelo"></div>
+						</div>
 					</li>
 					<li class="skills__list__item">
 						<p>Simpatía</p>
@@ -69,67 +74,75 @@
 
 			<section class="banner">
 				<div class="banner__image"></div>
-				<div class="banner__text"></div>
+				<div class="banner__text">
+					<h3>Soc petit, pero valent!!!</h3>
+				</div>
 			</section>
 
-			<form action="/form" method="post">
+			<form class="form" action="/form" method="post">
 
 				<div class="form__element">
-					<label for="nombre" class="form__label">Nombre</label>
-					<input type="text" class="form__input" id="nombre" required>
+					<label for="nombre" class="form__label">Nombre:</label>
+					<input type="text" class="form__input" id="nombre" placeholder="Introduce aquí tu nombre" required>
 				</div>
 				<div class="form__element">
-					<label for="Apellidos" class="form__label">Apellidos</label>
-					<input type="text" class="form__input" id="apellidos" required>
+					<label for="Apellidos" class="form__label">Apellidos:</label>
+					<input type="text" class="form__input" id="apellidos" placeholder="Introduce aquí tu apellido" required>
 				</div>
 				<div class="form__element">
-					<label for="telefono" class="form__label">Telefono</label>
-					<input type="tel" class="form__input" id="telefono" required>
+					<label for="telefono" class="form__label">Telefono:</label>
+					<input type="tel" class="form__input" id="telefono" placeholder="Introduce tu número de telefono" required>
 				</div>
 				<div class="form__element">
-					<label for="github" class="form__label">Usuario Github</label>
-					<input type="text" class="form__input" id="github" required>
+					<label for="github" class="form__label">Usuario Github:</label>
+					<input type="text" class="form__input" id="github" placeholder="&#64;&lt;username&gt;" required>
 				</div>
 				<fieldset class="form__element">
 					<legend>¿Cómo me conociste?</legend>
-					<div class="form__element__radio__list">
-						<label for="torneo">Torneo de artes marciales</label>
-						<input type="radio" id="torneo" name="torneo" value="torneo">
-						<label for="escuela">Escuela de la tortuga</label>
-						<input type="radio" id="escuela" name="escuela" value="escuela">
-						<label for="torre">Torre de Karin</label>
-						<input type="radio" id="torre" name="torre" value="torre">
-						<label for="capsule">Capsule Corp.</label>
-						<input type="radio" id="capsule" name="capsule" value="capsule">
-					</div>
+						<div class="form__element__radio">
+							<label for="torneo">Torneo de artes marciales</label>
+							<input type="radio" id="torneo" name="conocer" value="torneo">
+						</div>
+						<div class="form__element__radio">
+							<label for="escuela">Escuela de la tortuga</label>
+							<input type="radio" id="escuela" name="conocer" value="escuela">
+						</div>
+						<div class="form__element__radio">
+							<label for="torre">Torre de Karin</label>
+							<input type="radio" id="torre" name="conocer" value="torre">
+						</div>
+						<div class="form__element__radio">
+							<label for="capsule">Capsule Corp.</label>
+							<input type="radio" id="capsule" name="conocer" value="capsule">
+						</div>
 				</fieldset>
 				<div class="form__element">
-					<label for="info" class="form__label">Más información</label>
+					<label for="info" class="form__label">Más información:</label>
 					<textarea name="info" id="onfo" cols="30" rows="8" placeholder="Ej: Cuantas veces he resucitado a Krillin..."></textarea>
 				</div>
-				<div class="form__element form__element--checkbox">
+				<div class="form__element form__element__checkbox">
 					<label for="newsletter" class="form__label">Quiero acceso a la newsletter</label>
 					<input type="checkbox" name="newsletter" id="newsletter" value="selected">
 				</div>
-				<div>
-					<input type="submit" class="btn" value="Enviar">
+				<div class="form__element form__element__btn">
 					<input type="reset" class="btn btn__reset" value="Reset">
+					<input type="submit" class="btn" value="Enviar">
 				</div>
 			</form>
 
-			<footer>
-				<a href="https://www.linkedin.com/in/son-goku-7a90521b3/" class="footer__item" target="_blank">
-					<img src="assets/img/linkedin.png" alt="LinkedIn">
-				</a>
-				<a href="https://www.instagram.com/_boladedrac?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="footer__item" target="_blank">
-					<img src="assets/img/instagram.png" alt="Instagram">
-				</a>
-				<a href="https://youtu.be/WLOeKxyQ6Sg?si=3LS1YjNmak6qWXtZ" class="footer__item" target="_blank">
-					<img src="assets/img/youtube.png" alt="Youtube">
-				</a>
-			</footer>
-
+			
 		</main>
+		<footer>
+			<a href="https://www.linkedin.com/in/son-goku-7a90521b3/" class="footer__item" target="_blank">
+				<img src="assets/img/linkedin.png" alt="LinkedIn">
+			</a>
+			<a href="https://www.instagram.com/_boladedrac?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="footer__item" target="_blank">
+				<img src="assets/img/instagram.png" alt="Instagram">
+			</a>
+			<a href="https://youtu.be/WLOeKxyQ6Sg?si=3LS1YjNmak6qWXtZ" class="footer__item" target="_blank">
+				<img src="assets/img/youtube.png" alt="Youtube">
+			</a>
+		</footer>
 
 	</body>
 

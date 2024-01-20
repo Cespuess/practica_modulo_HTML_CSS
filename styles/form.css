@@ -1,0 +1,37 @@
+.form__element {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form__element .form__input {
+  border: groove 2px grey;
+}
+
+.form__element ~ fieldset {
+  border: none;
+  padding: 0;
+}
+
+.form__element legend {
+  margin-bottom: 1rem;
+}
+
+.form__element > label,
+.form__element legend {
+  font-weight: bold;
+}
+
+.form__element .form__element__radio {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.form__element.form__element__checkbox {
+  flex-direction: row-reverse;
+  align-items: center; 
+  justify-content: flex-end; 
+  gap: 1rem;
+}
