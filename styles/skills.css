@@ -12,6 +12,19 @@
   font-weight: bold;
 }
 
+@media (width > 908px) {
+   .skills .skills__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .skills .skills__list .skills__list__item{
+    width: 30%;
+  }
+}
+
 .barra__progreso__ext {
   border: solid 1px black;
   border-radius: 10px;
