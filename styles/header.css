@@ -41,6 +41,22 @@
   }
 }
 
+@media (hover:hover) {
+  .header .header__image:hover {
+    animation: image_scape 0.5s linear;
+    margin-left: 20%;
+  }
+}
+@keyframes image_scape {
+  0% {
+    transform: rotate(0deg);
+    margin-left: 0;
+  }
+  100% {
+    transform: rotate(360deg);
+    margin-left: 20%;
+  }
+}
 
 .header .header__nav__list {
   display: flex;
