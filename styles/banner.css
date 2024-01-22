@@ -8,6 +8,7 @@
   width: 100%;
   border-radius: 15%;
   margin-bottom: 3.5rem;
+  overflow: hidden;
 }
 
 .banner .banner__image {
@@ -17,7 +18,12 @@
   bottom: 0;
   right: 0;
   opacity: 0.5;
-  background: url(../assets/img/banner_goku.jpg) center / cover;
+  /*background: url(../assets/img/banner_goku.jpg) center / cover;*/
+}
+
+.banner .banner__image picture {
+  width: auto;
+  height: auto;
 }
 
 .banner .banner__text {

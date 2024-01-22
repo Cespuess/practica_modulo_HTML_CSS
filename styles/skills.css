@@ -11,13 +11,59 @@
   font-weight: bold;
 }
 
-.barra_progreso {
+.barra__progreso__ext {
   border: solid 1px black;
+  border-radius: 10px;
+  overflow: hidden;
   height: 1rem;
   display: flex;
 }
-#barra__progreso__vuelo {
-  width: 80%;
-  background-color: blue;
+
+.barra__progreso__int {
+  background-color: rgb(211, 159, 17);
   height: 100%;
+  border-radius: 10px;
+  
+  animation: barra_animada 2s linear;
+}
+
+#fuerza {
+  max-width: 100%;
+  width: 100%;
+}
+
+#velocidad {
+  max-width: 85%;
+  width: 85%;
+}
+
+#kamehameha {
+  max-width: 70%;
+  width: 70%;
+}
+
+#patadas {
+  max-width: 75%;
+  width: 75%;
+}
+
+#vuelo {
+  max-width: 80%;
+  width: 80%;
+}
+
+#simpatia {
+  max-width: 95%;
+  width: 95%;
+}
+
+@keyframes barra_animada {
+  0% {
+    width: 0%;
+    border-right: solid 2px rgb(245, 12, 12);
+  }
+  100% {
+    width: 100%;
+    border-right: solid 2px rgb(245, 12, 12);
+  }
 }

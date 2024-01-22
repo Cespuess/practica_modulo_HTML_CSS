@@ -23,13 +23,16 @@
 			<div class="header__image">
 			</div>
 			<nav class="header__nav">
-				<ul class="header__nav__mobile">
-					<li class="header__nav__mobile__item">Menu</li>
-				</ul>
-				<ul class="header__nav__pc">
-					<li class="header__nav__pc__item">Proyectos</li>
-					<li class="header__nav__pc__item">Skills</li>
-					<li class="header__nav__pc__item">Contacto</li>
+				<ul class="header__nav__list">
+					<li class="header__nav__list__item">
+						<a href="#">Proyectos</a>
+					</li>
+					<li class="header__nav__list__item hidden">
+						<a href="#skills">Skills</a>
+					</li>
+					<li class="header__nav__list__item hidden">
+						<a href="#contacto">Contacto</a>
+					</li>
 				</ul>
 			</nav>
 		</header>
@@ -40,46 +43,62 @@
 				<p>Buenas, me llamo Son Goku, llegué de chiquito al planeta tierra proveniente del planeta Vegeta con la misión de conquistarla. Al llegar me acogió un anciano llamado Son Gohan, y un día paseando con él me llevé un fuerte golpe en la cabeza, lo que hizo que me olvidara del plan inicial. Desde entonces he vivido muchas aventuras con mis amigos, ¿quieres unirte a mí?</p>
 			</section>
 	
-			<section class="skills">
+			<section class="skills" id="skills">
 				<h2>Mis skills</h2>
 				<ul class="skills__list">
 					<li class="skills__list__item">
 						<p>Fuerza</p>
-						<div class="barra_progreso barra_progreso__fuerza"></div>
+						<div class="barra__progreso__ext">
+							<div class="barra__progreso__int" id="fuerza"></div>
+						</div>
 					</li>
 					<li class="skills__list__item">
 						<p>Velocidad</p>
-						<div class="barra_progreso barra_progreso__velocidad"></div>
+						<div class="barra__progreso__ext">
+							<div class="barra__progreso__int" id="velocidad"></div>
+						</div>
 					</li>
 					<li class="skills__list__item">
 						<p>Kamehameha</p>
-						<div class="barra_progreso barra_progreso_kamehameha"></div>
+						<div class="barra__progreso__ext">
+							<div class="barra__progreso__int" id="kamehameha"></div>
+						</div>
 					</li>
 					<li class="skills__list__item">
 						<p>Patadas</p>
-						<div class="barra_progreso barra_progreso__patadas"></div>
+						<div class="barra__progreso__ext">
+							<div class="barra__progreso__int" id="patadas"></div>
+						</div>
 					</li>
 					<li class="skills__list__item">
 						<p>Vuelo</p>
-						<div class="barra_progreso barra_progreso__vue">
-							<div id="barra__progreso__vuelo"></div>
+						<div class="barra__progreso__ext">
+							<div class="barra__progreso__int" id="vuelo"></div>
 						</div>
 					</li>
 					<li class="skills__list__item">
 						<p>Simpatía</p>
-						<div class="barra_progreso barra_progreso__simpatia"></div>
+						<div class="barra__progreso__ext">
+							<div class="barra__progreso__int" id="simpatia"></div>
+						</div>
 					</li>	
 				</ul>
 			</section>
-
+			
 			<section class="banner">
-				<div class="banner__image"></div>
+				<div class="banner__image">
+					<picture>
+						<source	srcset="assets/img/banner_goku_m.jpg" media="(max-width: 480px)">
+						<source srcset="assets/img/banner_goku.jpg">
+						<img src="assets/img/banner_goku.jpg" alt="Banner Goku">
+					</picture>
+				</div>
 				<div class="banner__text">
 					<h3>Soc petit, pero valent!!!</h3>
 				</div>
 			</section>
 
-			<form class="form" action="/form" method="post">
+			<form class="form" id="contacto" action="/form" method="post">
 
 				<div class="form__element">
 					<label for="nombre" class="form__label">Nombre:</label>
@@ -132,7 +151,7 @@
 
 			
 		</main>
-		<footer>
+		<footer class="footer">
 			<a href="https://www.linkedin.com/in/son-goku-7a90521b3/" class="footer__item" target="_blank">
 				<img src="assets/img/linkedin.png" alt="LinkedIn">
 			</a>
