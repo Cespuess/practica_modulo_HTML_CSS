@@ -4,11 +4,11 @@
 
 .btn {
   color:black;
-  background-color: rgb(211, 159, 17);
+  background-color: var(--bg-btn);
   font-weight: bold;
   font-size:x-large;
   padding: 1rem;
-  border: solid 2px rgb(180, 136, 16);
+  border: solid 2px var(--border-btn);
   border-radius: 20px;
 
 }

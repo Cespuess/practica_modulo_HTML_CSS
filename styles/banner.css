@@ -17,7 +17,7 @@
 .banner .banner__text {
   position:absolute;
   z-index: 1;
-  background-color: rgb(211, 159, 17);
+  background-color: var(--bg-btn);
   border-radius: 15px;
   padding: 0.5rem;
 }

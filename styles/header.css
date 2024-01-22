@@ -55,9 +55,9 @@
   align-items:center;
   justify-content: center;
   padding: 0.5rem;
-  border: solid 4px rgb(180, 136, 16);
+  border: solid 4px var(--border-btn);
   border-radius: 10px;
-  background-color: rgb(211, 159, 17);
+  background-color: var(--bg-btn);
 }
 
 .header__nav__list .header__nav__list__item a {
