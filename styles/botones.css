@@ -1,5 +1,8 @@
 .form__element.form__element__btn {
   gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn {
@@ -7,15 +10,16 @@
   background-color: var(--bg-btn);
   font-weight: bold;
   font-size:x-large;
+  width: 90%;
   padding: 1rem;
   border: solid 2px var(--border-btn);
   border-radius: 20px;
-  transition: border-color 0.1s, background-color 0.1s, font-size 0.1s;
+  transition: border-color 0.1s, background-color 0.1s, transform 0.1s;
 }
 
 @media (hover:hover) {
   .btn:hover {
-    font-size:xx-large;
+    transform: scale(1.05);
   }
 }
 
@@ -32,4 +36,10 @@
 .btn.btn__reset:active {
   border-color: var(--bg-btn);
   background-color: var(--border-btn);
+}
+
+@media (width > 908px) {
+  .form__element__btn .btn {
+    width: 45%;
+  }
 }

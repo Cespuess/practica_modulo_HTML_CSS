@@ -2,6 +2,7 @@
   scroll-margin-top: 90px;
 }
 
+
 .form__element {
   display: flex;
   flex-direction: column;
@@ -12,7 +13,7 @@
   border: groove 2px grey;
 }
 
-.form__element ~ fieldset {
+.form__element#fieldset {
   border: none;
   padding: 0;
 }
@@ -38,4 +39,22 @@
   align-items: center; 
   justify-content: flex-end; 
   gap: 1rem;
+}
+
+@media (width > 908px) {
+  .form__user__infos {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  .form__user__infos .form__element {
+    width: 45%;
+  }
+
+  .form__element__btn {
+    flex-direction: row;
+    justify-content:center
+  }
 }
