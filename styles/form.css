@@ -1,3 +1,7 @@
+.form {
+  scroll-margin-top: 90px;
+}
+
 .form__element {
   display: flex;
   flex-direction: column;
