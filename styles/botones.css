@@ -10,9 +10,20 @@
   padding: 1rem;
   border: solid 2px var(--border-btn);
   border-radius: 20px;
+  transition: border-color 0.3s, background-color 0.3s;
+}
 
+.btn:active {
+  border-color: var(--bg-btn);
+  background-color: var(--border-btn);
 }
 
 .btn.btn__reset {
   background-color: transparent;
+  transition: border-color 0.1s, background-color 0.1s;
+}
+
+.btn.btn__reset:active {
+  border-color: var(--bg-btn);
+  background-color: var(--border-btn);
 }

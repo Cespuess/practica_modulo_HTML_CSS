@@ -58,13 +58,18 @@
   border: solid 4px var(--border-btn);
   border-radius: 10px;
   background-color: var(--bg-btn);
+  transition: border-color 0.1s, background-color 0.1s;
+}
+
+.header .header__nav__list .header__nav__list__item:active{
+  border-color: var(--bg-btn);
+  background-color: var(--border-btn);
 }
 
 .header__nav__list .header__nav__list__item a {
   text-decoration: none;
   color: black;
   font-weight: bold;
-  
 }
 
 .header .header__nav__list__item.hidden {
