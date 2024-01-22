@@ -17,6 +17,7 @@
 .banner .banner__text {
   position:absolute;
   z-index: 1;
-  border-top:solid 2px aquamarine;
-  border-radius: 15%;
+  background-color: rgb(211, 159, 17);
+  border-radius: 15px;
+  padding: 0.5rem;
 }
