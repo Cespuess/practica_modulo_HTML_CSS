@@ -55,10 +55,17 @@
   align-items:center;
   justify-content: center;
   padding: 0.5rem;
+  cursor:pointer;
   border: solid 4px var(--border-btn);
   border-radius: 10px;
   background-color: var(--bg-btn);
-  transition: border-color 0.1s, background-color 0.1s;
+  transition: border-color 0.1s, background-color 0.1s; transform: 0.1s;
+}
+
+@media (hover:hover) {
+  .header .header__nav__list .header__nav__list__item:hover{
+    transform:scale(1.1);
+  }
 }
 
 .header .header__nav__list .header__nav__list__item:active{
@@ -74,4 +81,10 @@
 
 .header .header__nav__list__item.hidden {
   display: none;
+}
+
+@media (width > 425px) {
+  .header .header__nav__list__item.hidden {
+    display: flex;
+  }
 }

@@ -10,7 +10,13 @@
   padding: 1rem;
   border: solid 2px var(--border-btn);
   border-radius: 20px;
-  transition: border-color 0.3s, background-color 0.3s;
+  transition: border-color 0.1s, background-color 0.1s, font-size 0.1s;
+}
+
+@media (hover:hover) {
+  .btn:hover {
+    font-size:xx-large;
+  }
 }
 
 .btn:active {
