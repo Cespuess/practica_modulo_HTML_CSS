@@ -21,7 +21,6 @@
 	</head>
 
 	<body class="main-bg">
-		
 		<header class="header">
 			<div class="header__image">
 			</div>
@@ -39,6 +38,7 @@
 				</ul>
 			</nav>
 		</header>
+		
 		<main class="contenedor">
 			
 			<section class="info">
@@ -103,19 +103,19 @@
 				<div class="form__user__infos">
 					<div class="form__element">
 						<label for="nombre" class="form__label">Nombre:</label>
-						<input type="text" class="form__input" id="nombre" placeholder="Introduce aquí tu nombre" pattern="^[A-Za-zñÑáéíóúÁÉÍÓÚàèìòùÀÈÌÒÙ\s´`']+[^ ]$" required>
+						<input type="text" class="form__input" id="nombre" name="nombre" placeholder="Introduce aquí tu nombre" pattern="^[A-Za-zñÑáéíóúÁÉÍÓÚàèìòùÀÈÌÒÙ\s´`']+[^ ]$" required>
 					</div>
 					<div class="form__element">
-						<label for="Apellidos" class="form__label">Apellidos:</label>
-						<input type="text" class="form__input" id="apellidos" placeholder="Introduce aquí tu apellido" pattern="^[A-Za-zñÑáéíóúÁÉÍÓÚàèìòùÀÈÌÒÙ\s´`']+[^ ]$" required>
+						<label for="apellidos" class="form__label">Apellidos:</label>
+						<input type="text" class="form__input" id="apellidos" name="apellidos" placeholder="Introduce aquí tu apellido" pattern="^[A-Za-zñÑáéíóúÁÉÍÓÚàèìòùÀÈÌÒÙ\s´`']+[^ ]$" required>
 					</div>
 					<div class="form__element">
 						<label for="telefono" class="form__label">Telefono:</label>
-						<input type="tel" class="form__input" id="telefono" placeholder="Ejemplo: 649-83-47-80" title="Introduce tu número de telefono" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}" required>
+						<input type="tel" class="form__input" id="telefono" name="telefono" placeholder="Ejemplo: 649-83-47-80" title="Introduce tu número de telefono" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}" required>
 					</div>
 					<div class="form__element">
 						<label for="github" class="form__label">Usuario Github:</label>
-						<input type="text" class="form__input" id="github" placeholder="&#64;&lt;username&gt;" pattern="^@[^\s]+" required>
+						<input type="text" class="form__input" id="github" name="github" placeholder="&#64;&lt;username&gt;" pattern="^@[^\s]+" required>
 					</div>
 				</div>
 				<fieldset class="form__element" id="fieldset">
