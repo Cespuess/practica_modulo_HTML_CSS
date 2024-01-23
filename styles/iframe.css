@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   animation: fadeIn 6s linear;
+  margin-bottom: 1rem;
 }
 
 @keyframes fadeIn {

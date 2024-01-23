@@ -1,0 +1,25 @@
+.proyectos .proyectos__grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+
+@media (width > 425px) {
+  .proyectos .proyectos__grid {
+  grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.proyectos__grid .proyectos__grid__libro {
+  text-align: center;
+}
+
+.proyectos__grid__libro .proyectos__grid__libro__img {
+  width:100%;
+}
+
+.proyectos__grid__libro .proyectos__grid__libro__img img{
+  width: 100%;
+}
+  
+
