@@ -53,18 +53,15 @@
 
 @media (hover:hover) {
   .header .header__image:hover {
-    animation: image_scape 0.5s linear;
-    margin-left: 20%;
+    animation: image_scape 0.5s linear alternate infinite;
   }
 }
 @keyframes image_scape {
   0% {
     transform: rotate(0deg);
-    margin-left: 0;
   }
   100% {
     transform: rotate(360deg);
-    margin-left: 20%;
   }
 }
 
@@ -109,7 +106,7 @@
   display: none;
 }
 
-@media (width > 580px) {
+@media (width > 830px) {
   .header .header__nav__list__item.hidden {
     display: flex;
   }

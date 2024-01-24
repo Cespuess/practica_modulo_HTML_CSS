@@ -38,7 +38,7 @@
   background-color: var(--border-btn);
 }
 
-@media (width > 908px) {
+@media (width > 830px) {
   .form__element__btn .btn {
     width: 45%;
   }

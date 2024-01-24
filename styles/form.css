@@ -11,6 +11,7 @@
 
 .form__element .form__input {
   border: groove 2px grey;
+  padding: 0.2rem;
 }
 
 .form__element#fieldset {
@@ -34,6 +35,10 @@
   gap: 0.5rem;
 }
 
+.form__element textarea {
+  padding: 0.2rem;
+}
+
 .form__element.form__element__checkbox {
   flex-direction: row-reverse;
   align-items: center; 
@@ -41,7 +46,7 @@
   gap: 1rem;
 }
 
-@media (width > 908px) {
+@media (width > 830px) {
   .form__user__infos {
     display:flex;
     flex-wrap: wrap;

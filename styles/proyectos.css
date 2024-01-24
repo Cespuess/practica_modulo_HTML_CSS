@@ -22,4 +22,6 @@
   width: 100%;
 }
   
-
+.proyectos__grid__libro .proyectos__grid__libro__texto h5 {
+  font-size: large;
+}
