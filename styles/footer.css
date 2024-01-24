@@ -1,12 +1,14 @@
 .footer {
   width: 100%;
-  background: rgb(165,119,34);
-  background: radial-gradient(circle, var(--bg-container) 0%, var(--border-btn) 100%);
+  background: var(--bg-header-footer);
   margin-top: 2rem;
   padding: 1rem;
   display: flex;
   align-items: center;
   justify-content:space-around;
+  -webkit-box-shadow: 4px -18px 19px -13px rgba(0,0,0,0.75);
+  -moz-box-shadow: 4px -18px 19px -13px rgba(0,0,0,0.75);
+  box-shadow: 4px -18px 19px -13px rgba(0,0,0,0.75);
 }
 
 footer a img {

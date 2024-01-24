@@ -3,6 +3,7 @@
   --bg-btn: rgb(211,159,17);
   --border-btn: rgb(180,136,16);
   --bg-container: rgba(165, 119, 34, 0.418);
+  --bg-header-footer: radial-gradient(circle, var(--bg-container) 0%, var(--border-btn) 100%);
   font-size: 16px;
 }
 

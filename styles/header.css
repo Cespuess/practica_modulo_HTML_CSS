@@ -3,7 +3,7 @@
   top: 0;
   width: 100%;
   z-index: 99;
-  background-color: var(--bg-color);
+  background: var(--bg-header-footer);
   display: flex;
   align-items: center; 
   justify-content: space-between;
@@ -12,6 +12,16 @@
   -webkit-box-shadow: 4px 18px 19px -13px rgba(0,0,0,0.75);
   -moz-box-shadow: 4px 18px 19px -13px rgba(0,0,0,0.75);
   box-shadow: 4px 18px 19px -13px rgba(0,0,0,0.75);
+}
+
+.header .header__bg {
+  position: absolute;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  background: url(../assets/img/logo_bola_de_drac.png) no-repeat center center / contain;
+  z-index: -1;
 }
 
 .header .header__image {
@@ -56,12 +66,6 @@
     transform: rotate(360deg);
     margin-left: 20%;
   }
-}
-
-.header .header__logo {
-  width:25%;
-  height: 68px;
-  background: url(../assets/img/logo_bola_de_drac.png) no-repeat center center / contain;
 }
 
 .header .header__nav__list {
