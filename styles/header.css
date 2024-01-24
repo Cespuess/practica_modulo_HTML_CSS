@@ -24,7 +24,7 @@
   z-index: -1;
 }
 
-@media (width < 390px) {
+@media (width < 400px) {
   .header .header__bg {
     transform: scale(0.7);
   }
