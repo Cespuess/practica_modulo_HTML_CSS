@@ -24,6 +24,12 @@
   z-index: -1;
 }
 
+@media (width < 390px) {
+  .header .header__bg {
+    transform: scale(0.7);
+  }
+}
+
 .header .header__image {
   width: 68px;
   height: 68px;
@@ -73,7 +79,7 @@
 
 .header .header__nav__list .header__nav__list__item {
   height: 68px;
-  width: 87px;
+  width: 68px;
   display:flex;
   align-items:center;
   justify-content: center;
